@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FPV Drone Sim</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="viewport"></canvas>
+      <div id="hud">
+        <div id="horizon-wrap">
+          <div id="horizon"></div>
+        </div>
+        <div id="crosshair">
+          <div class="dot"></div>
+          <div class="bar left"></div>
+          <div class="bar right"></div>
+        </div>
+        <div id="hud-status"></div>
+        <div id="hud-telemetry"></div>
+        <div id="hud-help">Options = arm/disarm &middot; Share = reset</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
